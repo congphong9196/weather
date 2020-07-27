@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_activity2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/weather_string"
+
+            android:textSize="80dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:textColor="#1E3BDF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forecast_string"
+            android:textSize="36dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#1E3BDF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtCityName"
+                android:singleLine="true"
+                android:layout_width="250dp"
+                android:layout_height="74dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:hint="@string/city_name_string"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btnGPS"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/gps2"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnDubao"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:background="#0F31F3"
+                android:gravity="center"
+                android:text="Dự báo"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

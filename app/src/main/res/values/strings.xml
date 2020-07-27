@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="weather_string">Dự báo</string>
+    <string name="forecast_string">thời tiết</string>
+    <string name="city_name_string">Nhập tên thành phố</string>
+</resources>
